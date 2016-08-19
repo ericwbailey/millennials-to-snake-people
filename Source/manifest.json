@@ -18,7 +18,7 @@
 	[
 		{
 			"matches": ["*://*/*"],
-			"exclude_matches": ["*://*github*millennials-to-snake-people*"],
+			"exclude_matches": ["*://*/*millennials-to-snake-people*"],
 			"all_frames": true,
 			"js": ["content_script.js"],
 			"run_at": "document_end"
