@@ -246,7 +246,7 @@ function observerCallback(mutations) {
 
     mutations.forEach(function(mutation) {
         for (i = 0; i < mutation.addedNodes.length; i++) {
-            if (mutation.addedNodes[i].nodeType === 3) {
+            if (mutation.addedNodes[i].nodeType === 3 && nutation.addedNodes[i].parentElement.tagName.match(/(input|textarea)/i)) {
                 // Replace the text for text nodes
                 handleText(mutation.addedNodes[i]);
             } else {
