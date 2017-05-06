@@ -1,10 +1,16 @@
 function walk(rootNode)
 {
+	myfilter = function(node) {
+		if (left(node.ID, 11) == "add_comment") // facebook comments input
+			return NodeFilter.FILTER_ACCEPT
+		else
+			return NodeFilter.FILTER_SKIP
+	}
     // Find all the text nodes in rootNode
     var walker = document.createTreeWalker(
         rootNode,
         NodeFilter.SHOW_TEXT,
-        null,
+        myfilter,
         false
     ),
     node;
