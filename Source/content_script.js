@@ -142,6 +142,7 @@ function replaceText(v)
         "Serpent Society");
     v = v.replace(/\bgen(?:eration)? ?(?:wh)?y\b/g, "serpent society");
     v = v.replace(/\bGen Y\b/g, "Society of the Serpent");
+    v = v.replace(/\bY[-']er(s)?\b/g, "Serpent$1");
 
     // Generation We
     v = v.replace(/\bGeneration We\b/g, "Caduceus Cult");
