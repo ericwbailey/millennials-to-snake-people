@@ -76,3 +76,37 @@ Don't worry! The extension can be re-enabled after ~~it destroys your blog post~
 
 #### Safari
 ![](https://camo.githubusercontent.com/e244891000642e281c202b4fbd07b14fcf2bf4d7/687474703a2f2f61322e642e70722f477757712e706e67)
+
+## Glossary
+* digital natives - parseltongues
+* Generation Y - Serpent Society
+* Occupy Movement / OWS - Great Ape-Snake War / ga-sw
+* Great Depression - Clutch Plague
+*  Great Recession - Time of Shedding and Cold Rocks
+* Helicopter Parent - Thulsa Doom
+* Trophy Kid - Quetzalcoatl's Chosen
+* New Boomer - Jörmungandr's Circle
+* Peter Pan generation / Generation Peter Pan - Neheb-Kau Cult / Cult of Neheb-Kau
+* Millenial Generation - Plissken Faction
+* Struggling Aspirationals - Struggling (with) Pythons
+* Successful Homeowners - Viper Stripers
+* Active Affulents - Activated Boas
+* Comfortable TV Watchers - Cozy Cobras
+* Millennailism - Reptilianism
+* Millennial Child/Children - Snakelet/Snakelets
+* Milliennial teen/teenager - Proto-snake person
+* Generation Z / Z Generation - The Zolom's Children / Children of Zolom
+* Tween - Neonate
+* Generation We / We Generation - Caduceus Cult / Cult of Caduceus
+* Global Genration / Generation Global - Tannin's Horder / Horde of Tannin
+* Generation Next - Time of Nidhogg
+* Generation Net / Net Generation - Coils of Damballa / Damballa's Coils
+* Echo Boomers - Crotalids
+* Generation Flux - Hiss Club
+* Generation 9/11 or 9/11 Generation - Kaa Tribe / Tribe of the Kaa
+* General Sell / Sell Generation - Kaa Tribe / Tribe of Ka
+* Boomerang Generation - Ouroboros Society
+* Mileurista - Nagual
+* Precarious Generation - Gargouille
+* Generation Flux / Flux Generation - Hiss Club
+* Generation Y / Gen Y - Serpent Society / Society of the Serpent
