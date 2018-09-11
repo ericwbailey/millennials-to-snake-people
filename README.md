@@ -76,3 +76,52 @@ Don't worry! The extension can be re-enabled after ~~it destroys your blog post~
 
 #### Safari
 ![](https://camo.githubusercontent.com/e244891000642e281c202b4fbd07b14fcf2bf4d7/687474703a2f2f61322e642e70722f477757712e706e67)
+
+## Replacements
+This is a list of all the replacements done by the extension:
+
+- `Millennial ` → ` Snake People` 
+- `Millennial Generation ` → ` Plissken faction` 
+- `Millennial {1: [man/men/boy/guy/woman/women/girl/gal](s)} ` → ` Snake {1}` 
+- `Millennial Teen(ager)('s) ` → ` proto-Snake [Person/People]` 
+- `Millennial Adult(s) ` → ` Adult Snake People` 
+- `mil·len·nial ` → ` snake peo·ple` 
+- `miˈlenēəl ` → ` snāk ˈpēpəl` 
+- `Great Recession ` → ` Time of Shedding and Cold Rocks` 
+- `Great Depression ` → ` Clutch Plague` 
+- `[Occupy Movement/Occupy Wall Street] ` → ` Great Ape-Snake War` 
+- `OWS ` → ` GA-SW` 
+- `Helicopter Parent(s) ` → ` Thulsa Doom/Thoth-Amon` 
+- `Trophy Kid ` → ` Quetzalcoatl's Chosen` 
+- `Digital Native(s) ` → ` Parseltongue` 
+- `Generation Z ` → ` The Zolom's Children` 
+- `Z Generation ` → ` Children of the Zolom` 
+- `Tween ` → ` Neonate` 
+- `[Generation Y/Generation Why] ` → ` Serpent Society` 
+- `Gen Y ` → ` Society of the Serpent` 
+- `Generation We ` → ` Caduceus Cult` 
+- `We Generation ` → ` Cult of the Caduceus` 
+- `Generation Me ` → ` The Cult of the Serpent` 
+- `Global Generation ` → ` Tannin's Horde` 
+- `Generation Global ` → ` Horde of Tannin` 
+- `Generation Next ` → ` Time of Nidhogg` 
+- `Net Generation ` → ` Damballa's Coils` 
+- `Generation Net ` → ` Coils of Damballa` 
+- `Echo Boomers ` → ` Crotalids` 
+- `Parennial ` → ` Clutchmaster` 
+- `New Boomer ` → ` Jörmungandr's Circle` 
+- `[Generation Flux/Flux Generation] ` → ` Hiss Clu` 
+- `Generation Sell ` → ` Kaa Tribe` 
+- `Sell Generation ` → ` Tribe of Kaa` 
+- `[Boomerang Generation/Generation Boomerang] ` → ` Ouroboros Society` 
+- `Peter Pan Generation ` → ` Neheb-Kau Cult` 
+- `Generation Peter Pan ` → ` Cult of Neheb-Kau` 
+- `Generation 9/11 ` → ` Kaa Tribe` 
+- `9/11 Generation ` → ` Tribe of the Kaa` 
+- `Struggling Aspirationals ` → ` Struggling (with) Pythons` 
+- `Successful Homeowners ` → ` Viper Stripers` 
+- `Active Affluents ` → ` Activated Boas` 
+- `Comfortable TV Watchers ` → ` Cozy Cobras` 
+- `[The Generation of €700/€700 Generation] ` → ` Ophion` 
+- `Mileurista ` → ` Nagual` 
+- `[Precarious Generation/Generation Precarious] ` → ` Gargouille` 
