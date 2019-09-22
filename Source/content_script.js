@@ -14,14 +14,11 @@ const justSwap = (text) => {
 
         }else if(answer === 'no') {
             alert('no problem')
+            return text;
         }
 
    }else {
-       happyCounter++;
-       if(happyCounter === 5){
-           console.log(`you're on a streak`);
-        
-       }
+
        return text;
    }
   
