@@ -11,7 +11,7 @@
       ],
       "all_frames": true,
       "js": [
-        "content.js"
+        "content_script.js"
       ],
       "run_at": "document_end"
     }
