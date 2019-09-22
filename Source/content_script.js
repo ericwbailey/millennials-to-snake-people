@@ -1,3 +1,36 @@
+var justInput = document.getElementsByTagName("input");
+console.log(justInput);
+
+const justAlert = () => {
+    console.log('active input')
+}
+
+for(i=0; i<justInput.length;i++){
+    // justInput[i].onchange= justAlert;
+    justInput[i].addEventListener('input', event => {
+        const newValue = event.target.value.toLowerCase();
+        console.log(event.target.value)
+    })    
+}
+
+const arr =[' just ', ' like ', ' actually ', ' sorry ', ' but '];
+for (let i=0; i < arr.length; i++) {
+if (arr.indexOf(justInput) !== -1) {
+  //highlight and provide suggestion
+let replaced = "";
+let boldText = "<div style=\"background-color: yellow; display: inline; font-weight: bold;\">" + arr[i] + "</div>";
+let match = 'suggestion';
+replaced = justInput.replace(match, boldText);
+} else if (arr.indexOf(justInput) == -1) {
+  console.log('error')// ?
+}
+} 
+
+
+// if(justInput.activeElement){
+//     console.log('use just')
+// }
+
 function walk(rootNode)
 {
     // Find all the text nodes in rootNode
@@ -15,17 +48,29 @@ function walk(rootNode)
     }
 }
 
+
+
 function handleText(textNode) {
   textNode.nodeValue = replaceText(textNode.nodeValue);
+
+  if((textNode.nodeValue) === 'just') {      
+      console.log('found just')
+    //   textNode.classList.add('blue');
+
+  }
 }
+
+// function selectText(textNode) {
+//     if(textNode.nodeType === )
+// }
 
 function replaceText(v)
 {
     // Fix some misspellings
-    v = v.replace(/\b(M|m)illienial(s)?\b/g, "$1illennial$2");
-    v = v.replace(/\b(M|m)illenial(s)?\b/g, "$1illennial$2");
-    v = v.replace(/\b(M|m)ilennial(s)?\b/g, "$1illennial$2");
-    v = v.replace(/\b(M|m)ilenial(s)?\b/g, "$1illennial$2");
+    v = v.replace(/\b(J|j)ust(s)?\b/g, "$1ust$2");
+    v = v.replace(/\b(J|j)ust(s)?\b/g, "$1ust$2");
+    v = v.replace(/\b(J|j)ust(s)?\b/g, "$1ust$2");
+    v = v.replace(/\b(J|j)ust(s)?\b/g, "$1ust$2");
 
     // Millennial Generation
     v = v.replace(
@@ -298,3 +343,4 @@ function walkAndObserve(doc) {
     }
 }
 walkAndObserve(document);
+
