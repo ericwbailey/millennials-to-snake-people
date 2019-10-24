@@ -203,7 +203,7 @@ function replaceText(v)
     v = v.replace(/\bGeneration Peter Pan\b/g, "Cult of Neheb-Kau");
     v = v.replace(/\bgeneration (?:P|p)eter (?:P|p)an\b/g, "cult of Neheb-Kau");
 
-    // Alexandria Ocasio Cortez
+    // Alexandria Ocasio-Cortez
     v = v.replace(/\bAlexandria Ocasio-Cortez\b/g, "Nagaina");
     v = v.replace(/\bAOC\b/g, "Nagaina");
 
