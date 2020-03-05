@@ -249,7 +249,11 @@ function isForbiddenNode(node) {
     return node.isContentEditable || // DraftJS and many others
     (node.parentNode && node.parentNode.isContentEditable) || // Special case for Gmail
     (node.tagName && (node.tagName.toLowerCase() == "textarea" || // Some catch-alls
-                     node.tagName.toLowerCase() == "input"));
+                     node.tagName.toLowerCase() == "input" ||
+                     node.tagName.toLowerCase() == "script" ||
+                     node.tagName.toLowerCase() == "noscript" ||
+                     node.tagName.toLowerCase() == "template" ||
+                     node.tagName.toLowerCase() == "style"));
 }
 
 // The callback used for the document body and title observers
@@ -275,13 +279,13 @@ function observerCallback(mutations) {
 
 // Walk the doc (document) body, replace the title, and observe the body and title
 function walkAndObserve(doc) {
-    var docTitle = doc.getElementsByTagName('title')[0],
+    var docHead = doc.getElementsByTagName('head')[0],
     observerConfig = {
         characterData: true,
         childList: true,
         subtree: true
     },
-    bodyObserver, titleObserver;
+    bodyObserver, headObserver;
 
     // Do the initial text replacements in the document body and title
     walk(doc.body);
@@ -292,9 +296,9 @@ function walkAndObserve(doc) {
     bodyObserver.observe(doc.body, observerConfig);
 
     // Observe the title so we can handle any modifications there
-    if (docTitle) {
-        titleObserver = new MutationObserver(observerCallback);
-        titleObserver.observe(docTitle, observerConfig);
+    if (docHead) {
+        headObserver = new MutationObserver(observerCallback);
+        headObserver.observe(docHead, observerConfig);
     }
 }
 walkAndObserve(document);
