@@ -297,4 +297,10 @@ function walkAndObserve(doc) {
         titleObserver.observe(docTitle, observerConfig);
     }
 }
-walkAndObserve(document);
+
+chrome.storage.sync.get("disabledSites", function(stored) {
+    if ("disabledSites" in stored && stored["disabledSites"].includes(window.location.hostname)) {
+        return;
+    }
+    walkAndObserve(document);
+});
