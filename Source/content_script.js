@@ -123,10 +123,12 @@ function replaceText(v)
     v = v.replace(/\bdigital native(s)?\b/g, "parseltongue$1");
 
     // Generation Z
-    v = v.replace(/\bGen(?:eration|-)? ?Z\b/g, "The Zolom's Children");
-    v = v.replace(/\bgen(?:eration|-)? ?(?i)Z\b/g, "the Zolom's children");
+    v = v.replace(/\b[Gg]en ?Z\b/g, "Zolom's children");
+    v = v.replace(/\bGeneration ?Z\b/g, "The Zolom's Children");
+    v = v.replace(/\bgeneration ?(?:i)Z\b/g, "the Zolom's children");
     v = v.replace(/\bZ Generation\b/g, "Children of the Zolom");
     v = v.replace(/\bz generation\b/g, "children of the Zolom");
+    v = v.replace(/\b[Zz]oomers?\b/g, "Zolom's spawn");
 
     // Tweens
     // The replacement syntax here emulates a negative lookbehind to avoid replacing `'tween`
