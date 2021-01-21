@@ -91,8 +91,10 @@ function replaceText(v)
     // Millennial
     v = v.replace(/\bMillennial\b/g, "Snake Person");
     v = v.replace(/\bmillennial\b/g, "snake person");
-    v = v.replace(/\bMillennial(?:(s)\b(')|s\b)/g, "Snake People$2$1");
-    v = v.replace(/\bmillennial(?:(s)\b(')|s\b)/g, "snake people$2$1");
+    v = v.replace(/\bMillennial(?:(s)\b(')[^ ]|s\b)-/g, "Snake-people$2$1-");
+    v = v.replace(/\bmillennial(?:(s)\b(')[^ ]|s\b)-/g, "snake-people$2$1-");
+    v = v.replace(/\bMillennial(?:(s)\b(')[^ ]|s\b)/g, "Snake People$2$1");
+    v = v.replace(/\bmillennial(?:(s)\b(')[^ ]|s\b)/g, "snake people$2$1");
 
     // The Great Recession
     v = v.replace(/\bGreat Recession\b/g, "Time of Shedding and Cold Rocks");
