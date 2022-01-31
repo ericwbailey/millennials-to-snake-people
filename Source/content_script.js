@@ -22,10 +22,7 @@ function handleText(textNode) {
 function replaceText(v)
 {
     // Fix some misspellings
-    v = v.replace(/\b(M|m)illienial(s)?\b/g, "$1illennial$2");
-    v = v.replace(/\b(M|m)illenial(s)?\b/g, "$1illennial$2");
-    v = v.replace(/\b(M|m)ilennial(s)?\b/g, "$1illennial$2");
-    v = v.replace(/\b(M|m)ilenial(s)?\b/g, "$1illennial$2");
+    v = v.replace(/\b(M|m)il+i?en+[ie]al(s)?\b/g, "$1illennial$2");
 
     // Millennial Generation
     v = v.replace(
@@ -138,6 +135,20 @@ function replaceText(v)
         "Serpent Society");
     v = v.replace(/\bgen(?:eration)? ?(?:wh)?y\b/g, "serpent society");
     v = v.replace(/\bGen Y\b/g, "Society of the Serpent");
+
+    // Generation X
+    v = v.replace(/\bGen(eration)? [Xx]\b/g, "Ophidia's Kindred Spirits");
+    v = v.replace(/\bgen(eration)? [Xx]\b/g, "Ophidia's kindred spirits");
+    v = v.replace(/\b[Xx] Gen(eration)?\b/g, "Kindred Spirits of the Ophidiae");
+    v = v.replace(/\b[Xx] gen(eration)?\b/g, "kindred spirits of the Ophidiae");
+
+    // Xennials (aka "late Gen X")
+    v = v.replace(/\bXennial(s)?\b/g, "Squamata$1");
+    v = v.replace(/\bxennial(s)?\b/g, "squamata$1");
+
+    // Boomers
+    v = v.replace(/\bBoomer(s)?\b/g, "Overheater$1");
+    v = v.replace(/\bboomer(s)?\b/g, "overheater$1");
 
     // Generation We
     v = v.replace(/\bGeneration We\b/g, "Caduceus Cult");
