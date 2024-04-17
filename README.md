@@ -1,3 +1,7 @@
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+This project is no longer maintained due to [Manifest V3's user-hostile, anticompetitive policies](https://www.eff.org/deeplinks/2021/12/chrome-users-beware-manifest-v3-deceitful-and-threatening).
+
 # Millennials to Snake People
 
 Browser extension that reveals the *real* truth behind Millennials.
