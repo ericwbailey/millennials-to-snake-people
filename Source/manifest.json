@@ -6,14 +6,14 @@
 	"description": "Replaces the text 'Millennial' with 'Snake People'.",
 	"author": "Eric Bailey",
 	"version": "2.3",
+        "permissions": [
+            "storage",
+            "tabs"
+        ],
 
-	"icons": {
-		"16": "icon16.png",
-		"32": "icon32.png",
-		"48": "icon48.png",
-		"128": "icon128.png"
-	},
-
+   "background": {
+       "scripts": ["background.js"]
+   },
 	"content_scripts":
 	[
 		{
@@ -22,5 +22,6 @@
 			"js": ["content_script.js"],
 			"run_at": "document_end"
 		}
-	]
+	],
+   "browser_action": {}
 }
