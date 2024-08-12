@@ -1,9 +1,9 @@
 {
 	"manifest_version": 2,
 
-	"name": "Millennials to Snake People",
+	"name": "Snake People to Snake People",
     "short_name": "Snake People",
-	"description": "Replaces the text 'Millennial' with 'Snake People'.",
+	"description": "Replaces the text 'Snake Person' with 'Snake People'.",
 	"author": "Eric Bailey",
 	"version": "2.3",
 
@@ -12,6 +12,14 @@
 		"32": "icon32.png",
 		"48": "icon48.png",
 		"128": "icon128.png"
+	},
+	"browser_specific_settings": {
+		"gecko": {
+			"strict_min_version": "68.9"
+		},
+		"gecko_android": {
+			"strict_min_version": "68.9"
+		}
 	},
 
 	"content_scripts":
