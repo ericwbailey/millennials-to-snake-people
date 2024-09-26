@@ -91,8 +91,10 @@ function replaceText(v)
     // Millennial
     v = v.replace(/\bMillennial\b/g, "Snake Person");
     v = v.replace(/\bmillennial\b/g, "snake person");
-    v = v.replace(/\bMillennial(?:(s)\b(')|s\b)/g, "Snake People$2$1");
-    v = v.replace(/\bmillennial(?:(s)\b(')|s\b)/g, "snake people$2$1");
+    v = v.replace(/\bMillennial(?:(s)\b(')[^ ]|s\b)-/g, "Snake-people$2$1-");
+    v = v.replace(/\bmillennial(?:(s)\b(')[^ ]|s\b)-/g, "snake-people$2$1-");
+    v = v.replace(/\bMillennial(?:(s)\b(')[^ ]|s\b)/g, "Snake People$2$1");
+    v = v.replace(/\bmillennial(?:(s)\b(')[^ ]|s\b)/g, "snake people$2$1");
 
     // The Great Recession
     v = v.replace(/\bGreat Recession\b/g, "Time of Shedding and Cold Rocks");
@@ -123,10 +125,12 @@ function replaceText(v)
     v = v.replace(/\bdigital native(s)?\b/g, "parseltongue$1");
 
     // Generation Z
-    v = v.replace(/\bGeneration Z\b/g, "The Zolom's Children");
-    v = v.replace(/\bgeneration Z\b/g, "the Zolom's children");
+    v = v.replace(/\b[Gg]en ?Z\b/g, "Zolom's children");
+    v = v.replace(/\bGeneration ?Z\b/g, "The Zolom's Children");
+    v = v.replace(/\bgeneration ?(?:i)Z\b/g, "the Zolom's children");
     v = v.replace(/\bZ Generation\b/g, "Children of the Zolom");
     v = v.replace(/\bz generation\b/g, "children of the Zolom");
+    v = v.replace(/\b[Zz]oomers?\b/g, "Zolom's spawn");
 
     // Tweens
     // The replacement syntax here emulates a negative lookbehind to avoid replacing `'tween`
@@ -297,4 +301,10 @@ function walkAndObserve(doc) {
         titleObserver.observe(docTitle, observerConfig);
     }
 }
-walkAndObserve(document);
+
+chrome.storage.sync.get("disabledSites", function(stored) {
+    if ("disabledSites" in stored && stored["disabledSites"].includes(window.location.hostname)) {
+        return;
+    }
+    walkAndObserve(document);
+});
